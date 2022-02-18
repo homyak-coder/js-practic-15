@@ -1,14 +1,14 @@
 "use strict";
 
 class First {
-  static hello() {
+  hello() {
     console.log("Привет, я метод родителя!");
   }
 }
 
 class Second extends First {
   hello() {
-    First.hello();
+    super.hello();
     console.log("А я наследуемый метод!");
   }
 }
